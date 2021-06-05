@@ -31,7 +31,6 @@ class String
     array = self.split(/[\.!?] /)
     array.length
   end
-end
 
 
 
