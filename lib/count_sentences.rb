@@ -30,11 +30,14 @@ class String
   def count_sentences
     sentence_array = []
     sentence_array << self.split("." || "?" || "!")
+    sentence_array.length
     
   end
 
 
 
+
+end
 
 
 
