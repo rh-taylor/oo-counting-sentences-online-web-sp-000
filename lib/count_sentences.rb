@@ -1,5 +1,3 @@
-require 'pry'
-
 class String
 
   def sentence?
@@ -10,6 +8,7 @@ class String
     end
   end
 
+
   def question?
     if self.end_with?("?")
       true
@@ -18,6 +17,7 @@ class String
     end
   end
 
+
   def exclamation?
     if self.end_with?("!")
       true
@@ -25,9 +25,16 @@ class String
       false
     end
   end
-  
+
+
   def count_sentences
-    array = self.split(/[\.!?] /)
-    array.length
+    self.split("." || "?" || "!")
+    
   end
+
+
+
+
+
+
 end
